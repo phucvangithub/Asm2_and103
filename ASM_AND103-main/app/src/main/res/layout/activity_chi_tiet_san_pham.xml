@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".ChiTietSanPhamActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Toolbar -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarchitietsp"
+            app:title="Chi tiết sản phẩm"
+            app:titleTextColor="#020202"
+            app:itemIconTint="#4BA8EB"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"/>
+
+        <!-- Product Image -->
+        <ImageView
+            android:id="@+id/imgAvatatr"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="10dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/ic_launcher" />
+
+        <!-- Product Details -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Product Name -->
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sofa SÖDERHAMN"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Năm sản xuất: "
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvNamSX"
+                    android:text="2023"
+                    android:textColor="#F47936"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+
+            <!-- Color Selection -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hãng: "
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvHang"
+                    android:text="Huyndai"
+                    android:textColor="#F47936"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <!-- Color Selection -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Giá: "
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvGia"
+                    android:text="6.300.000 VND"
+                    android:textColor="#F47936"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Product Description -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mô tả"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_margin="5dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtmotachitietsp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Hyundai Elantra thừa hưởng những tinh hoa thiết kế trong ngôn ngữ “điêu khắc dòng chảy” vang danh của Hyundai trong những năm gần đây. Bên cạnh đó, chiếc xe còn được các tổ chức kiểm nghiệm an toàn hàng đầu trên thế giới chứng nhận là một trong những mẫu xe an toàn nhất"
+            android:textColor="#666666"
+            android:textSize="16sp" />
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinnerchitietsp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/spinner"
+            android:padding="15dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textAlignment="center" />
+
+
+
+
+        <!-- Add to Cart Button -->
+        <Button
+            android:id="@+id/btnthemgiohang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:backgroundTint="#414F44"
+            android:text="Thêm vào giỏ hàng"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

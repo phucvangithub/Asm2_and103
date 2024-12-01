@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ASM_AND103</string>
+    <string name="forgot_pasword"><u>Quên mật khẩu</u></string>
+    <string name="login_up">Đã có tài khoản? <b>Đăng nhập</b></string>
+    <string name="sign_up">Bạn chưa có tài khoản? <b>Đăng ký</b></string>
+
+</resources>

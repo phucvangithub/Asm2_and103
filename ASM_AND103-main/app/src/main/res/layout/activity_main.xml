@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="3dp"
+    tools:context=".MainActivity"
+    >
+    <EditText
+        android:id="@+id/ed_search"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:imeOptions="actionSearch"
+        android:maxLines="1"
+        android:inputType="text"
+        android:layout_marginHorizontal="5dp"
+        android:drawableEnd="@drawable/ic_search"
+        android:background="@drawable/custom_edtext"
+        android:hint="Search car"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Nút Giỏ Hàng ở góc phải trên -->
+    <ImageView
+        android:id="@+id/btn_cart"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+
+        android:src="@drawable/ic_cart"
+        android:contentDescription="Giỏ hàng"
+      />
+    <androidx.core.widget.NestedScrollView
+        android:layout_below="@+id/ed_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/banner_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="5dp"/>
+            <me.relex.circleindicator.CircleIndicator
+                android:id="@+id/circleIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="-20dp"
+                android:layout_marginBottom="16dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Danh sách sản phẩm"
+                android:textSize="20sp"
+                android:textColor="#333333"
+                android:layout_margin="16dp"
+                android:textStyle="bold"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/listviewMain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="10dp"
+
+                />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/ic_add"
+        android:backgroundTint="#FFC107"
+        />
+
+</RelativeLayout>

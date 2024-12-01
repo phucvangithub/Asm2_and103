@@ -1,0 +1,69 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/etCarName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên xe"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/etCarYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Năm sản xuất"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/etCarBrand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Hãng xe"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/etCarPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Giá xe"
+        android:inputType="numberDecimal"/>
+
+    <ImageView
+        android:id="@+id/ivSelectedImage"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/baseline_broken_image_24" />
+
+    <!-- Button để chọn ảnh -->
+    <Button
+        android:id="@+id/btnSelectImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#FFC107"
+        android:text="Chọn Ảnh" />
+    <EditText
+        android:id="@+id/etmota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Mô tả" />
+
+    <Button
+        android:id="@+id/btnSaveCar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#FFC107"
+        android:text="Lưu"/>
+</LinearLayout>
